@@ -12,8 +12,9 @@ let score = 0;
 //Movies game
 async function moviesGame() {
   //Fetch and give the initial data
-  const response = await fetch("../json/movies.json");
+  const response = await fetch("json/movies.json");
   const data = await response.json();
+  console.log(data)
 
   //Give the choices
   choicesName = [];
