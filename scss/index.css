@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+}
+* header {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: #02c39a;
+  border-bottom: 1px solid #000;
+}
+* header a {
+  color: #000;
+  text-decoration: none;
+}
+* #content #loseText {
+  display: none;
+  text-align: center;
+}
+* #content #startingState {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+* #content #startingState p {
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+}
+* #content #startingState #buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+* #content #startingState #buttons #actorsBtn,
+* #content #startingState #buttons #moviesBtn {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+* #content #startingState #buttons #actorsBtn:after,
+* #content #startingState #buttons #moviesBtn:after {
+  content: "";
+  background-color: #02c39a;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+* #content #startingState #buttons #actorsBtn:hover:after,
+* #content #startingState #buttons #moviesBtn:hover:after {
+  top: 0px;
+  left: 0px;
+}
+* #content #movieImg {
+  display: none;
+  margin: -4vw auto 0.5rem auto;
+  height: 35vw;
+}
+* #content #hearts {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: baseline;
+  margin-left: -5vw;
+}
+* #content #hearts .hearts {
+  display: none;
+  width: 5vw;
+}
+* #content div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+* #content div .btn {
+  display: none;
+  width: 45vw;
+  height: 3rem;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #000;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+* #content div .btn:hover {
+  background-color: #e6e6e6;
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+* #content #score {
+  display: none;
+  text-align: center;
+  margin: 1rem auto;
+}
+* #content #nextActorBtn,
+* #content #nextMovieBtn,
+* #content #restartBtn {
+  display: none;
+  background: #5e5df0;
+  border-radius: 999px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  width: -moz-fit-content;
+  width: fit-content;
+  word-break: break-word;
+  width: 20vw;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+* footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 1rem;
+  background-color: #02c39a;
+  border-top: 1px solid #000;
+}
+* footer a {
+  color: #000;
+}
+
+@media only screen and (max-width: 63em) {
+  #homeSVG {
+    width: 100vw;
+    margin: 6rem auto;
+  }
+}
+@media only screen and (min-width: 64em) {
+  #homeSVG {
+    width: 40vw;
+    margin: 3rem auto;
+  }
+}/*# sourceMappingURL=index.css.map */

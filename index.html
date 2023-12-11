@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieGame</title>
+    <link rel="stylesheet" type="text/css" href="scss/index.css" />
+    <script src="js/moviesGame.js"></script>
+    <script src="js/actorsGame.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html">
+        <h1>Cinema Trivia</h1>
+      </a>
+    </header>
+    <div id="content">
+      <h1 id="loseText">Game Over !</h1>
+      <div id="startingState">
+        <p id="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe labore
+          sint vitae, delectus ipsa nihil repellendus asperiores sed excepturi
+          nulla eos aperiam ab laudantium aut, deserunt debitis minima, nam
+          voluptate? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Saepe labore sint vitae, delectus ipsa nihil repellendus asperiores
+          sed excepturi nulla eos aperiam ab laudantium aut, deserunt debitis
+          minima, nam voluptate?
+        </p>
+        <div id="buttons">
+          <button onclick="actorsGame()" id="actorsBtn">Actors quiz</button>
+          <button onclick="moviesGame()" id="moviesBtn">Movies quiz</button>
+        </div>
+        <img src="img/undraw_horror_movie_3988.svg" alt="homeSVG" id="homeSVG" />
+      </div>
+
+      <div id="hearts">
+        <img src="img/heart.jfif" alt="heart" class="hearts" />
+        <img src="img/heart.jfif" alt="heart" class="hearts" />
+        <img src="img/heart.jfif" alt="heart" class="hearts" />
+      </div>
+
+      <img id="movieImg" src="#" alt="movieImg" />
+
+      <div>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+      </div>
+
+      <h1 id="score">Score: 0</h1>
+
+      <button id="nextActorBtn" onclick="actorsGame()">Next</button>
+      <button id="nextMovieBtn" onclick="moviesGame()">Next</button>
+
+      <button id="restartBtn">Restart</button>
+    </div>
+    <footer>
+      <h2>Jad Alhaq El Bouchikhi</h2>
+      <p xmlns:cc="http://creativecommons.org/ns#">
+        This work is licensed under
+        <a
+          href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+          target="_blank"
+          rel="license noopener noreferrer"
+          style="display: inline-block"
+          >CC BY-NC-SA 4.0<img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" /><img
+            style="
+              height: 22px !important;
+              margin-left: 3px;
+              vertical-align: text-bottom;
+            "
+            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"
+        /></a>
+      </p>
+    </footer>
+  </body>
+</html>
