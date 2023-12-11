@@ -8,7 +8,7 @@ function getRandomInt(min, max) {
 //Actors game
 async function actorsGame() {
   //Fetch and give the initial data
-  const response = await fetch("json/actors.json");
+  const response = await fetch("CinemaTrivia/json/actors.json");
   const data = await response.json();
 
   //Give the choices
